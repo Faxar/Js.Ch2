@@ -8,11 +8,12 @@ var secondQuestion = new Question('How old are you?', '34');
 
 var questionsArr = [firstQuestion, secondQuestion];
 
-(
-    for (var i = 0; i<questionsArr.length; i++){
-
+(function(){
+        for (var i = 0; i<questionsArr.length; i++){
+            prompt(questionsArr[i].question);
+        };
     }
-)
+)();
 
 
 
